@@ -8,7 +8,7 @@
         {
 
 
-            Console.WriteLine("HI");
+            Console.WriteLine(MathUtils.SquareRoot(145));
 
         }
 
