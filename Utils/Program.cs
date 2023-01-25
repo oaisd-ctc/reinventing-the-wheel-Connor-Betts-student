@@ -6,10 +6,7 @@
 
         public static void Main(string[] args)
         {
-
-
-            Console.WriteLine("HI");
-
+            Console.WriteLine(StringUtils.CountConstants("above"));
         }
 
 
