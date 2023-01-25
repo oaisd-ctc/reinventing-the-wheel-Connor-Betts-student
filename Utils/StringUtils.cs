@@ -101,9 +101,33 @@ namespace MyUtilities
             return "Constants - " + cons + ".";
         }
 
-        public static string HasLetter(string s, string p)
+        public static bool HasLetter(string s, string p)
         {
-            
+            int l = s.Length;
+            int c = p.Length;
+            int f = 0;
+            for (int i = 0; i < l; i++)
+            {
+                if (s[i] == p[0])
+                {
+                    for (int K = i + 1, j = 1; j < c; j++, K++)
+                    {
+                        if (s[K] == p[j])
+                        {
+                            f++;
+                        }
+                    }
+                }
+            }
+            if (f == c - 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
+

@@ -6,7 +6,7 @@
 
         public static void Main(string[] args)
         {
-            Console.WriteLine(StringUtils.CountConstants("above"));
+            Console.WriteLine(StringUtils.HasLetter("Hello, my name is corey", "friend"));
         }
 
 
