@@ -134,9 +134,25 @@ namespace MyUtilities
             return product;
         }
 
-        //Sorting
+        //Range
 
+        public static int Range(int[]Nums)
+        {
+            int Min= Nums[0];
+            int Max=0;
+            int range = 0;
+            foreach(int num in Nums){
+                if(num<Min){
+                    Min=num;
+                }
+                if(num > Max){
+                    Max = num;
+                }
+            }
+            range = Max - Min;
+            return range;
         
+        }
     }
 
 }
