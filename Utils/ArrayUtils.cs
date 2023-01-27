@@ -10,24 +10,26 @@ namespace MyUtilities
             int sum = 0;
             int length = 0;
 
-            foreach(int num in Nums){
-                sum +=num;
+            foreach (int num in Nums)
+            {
+                sum += num;
                 length++;
             }
-            average = sum/length;
+            average = sum / length;
             return average;
         }
-        public static double Average(double[]Nums)
+        public static double Average(double[] Nums)
         {
             double average = 0;
             double sum = 0;
             double length = 0;
 
-            foreach(double num in Nums){
-                sum +=num;
+            foreach (double num in Nums)
+            {
+                sum += num;
                 length++;
             }
-            average = sum/length;
+            average = sum / length;
             return average;
         }
         public static int Mean(int[] Nums)
@@ -36,63 +38,73 @@ namespace MyUtilities
             int sum = 0;
             int length = 0;
 
-            foreach(int num in Nums){
-                sum +=num;
+            foreach (int num in Nums)
+            {
+                sum += num;
                 length++;
             }
-            mean = sum/length;
+            mean = sum / length;
             return mean;
         }
-        public static double Mean(double[]Nums)
+        public static double Mean(double[] Nums)
         {
             double mean = 0;
             double sum = 0;
             double length = 0;
 
-            foreach(double num in Nums){
-                sum +=num;
+            foreach (double num in Nums)
+            {
+                sum += num;
                 length++;
             }
-            mean = sum/length;
+            mean = sum / length;
             return mean;
         }
         // Max & Min
-        public static int Max(int[]Nums)
+        public static int Max(int[] Nums)
         {
             int Max = 1;
-            foreach(int num in Nums){
-                if(num > Max){
+            foreach (int num in Nums)
+            {
+                if (num > Max)
+                {
                     Max = num;
                 }
             }
             return Max;
         }
-        public static double Max(double[]Nums)
+        public static double Max(double[] Nums)
         {
             double Max = 1;
-            foreach(double num in Nums){
-                if(num>Max){
-                    Max=num;
+            foreach (double num in Nums)
+            {
+                if (num > Max)
+                {
+                    Max = num;
                 }
             }
             return Max;
         }
-        public static int Min(int[]Nums)
+        public static int Min(int[] Nums)
         {
             int Min = Nums[0];
-            foreach(int num in Nums){
-                if(num<Min){
-                    Min=num;
+            foreach (int num in Nums)
+            {
+                if (num < Min)
+                {
+                    Min = num;
                 }
             }
             return Min;
         }
-        public static double Min(double[]Nums)
+        public static double Min(double[] Nums)
         {
             double Min = Nums[0];
-            foreach(double num in Nums){
-                if(num<Min){
-                    Min=num;
+            foreach (double num in Nums)
+            {
+                if (num < Min)
+                {
+                    Min = num;
                 }
             }
             return Min;
@@ -101,42 +113,120 @@ namespace MyUtilities
 
 
         //Sum & Product
-        public static int Sum(int[]Nums)
+        public static int Sum(int[] Nums)
         {
-           int sum = 0;
-           foreach(int num in Nums){
-            sum +=num;
-           }
-           return sum;
-        }
-        public static double Sum(double[]Nums)
-        {
-            double sum =0;
-            foreach(double num in Nums){
+            int sum = 0;
+            foreach (int num in Nums)
+            {
                 sum += num;
             }
             return sum;
         }
-        public static int Product(int[]Nums)
+        public static double Sum(double[] Nums)
+        {
+            double sum = 0;
+            foreach (double num in Nums)
+            {
+                sum += num;
+            }
+            return sum;
+        }
+        public static int Product(int[] Nums)
         {
             int product = 1;
-            foreach(int num in Nums){
+            foreach (int num in Nums)
+            {
                 product *= num;
             }
             return product;
         }
-        public static double Product(double[]Nums)
+        public static double Product(double[] Nums)
         {
             double product = 1;
-            foreach(double num in Nums){
+            foreach (double num in Nums)
+            {
                 product *= num;
             }
             return product;
         }
 
-        //Sorting
+        public static int[] SortAscending(int[] Nums)
+        {
+            var n = Nums.Length;
+            for (int i = 0; i < n - 1; i++)
+            {
+                for (int j = 0; j < n - i - 1; j++)
+                {
+                    if (Nums[j] > Nums[j + 1])
+                    {
+                        var tempVar = Nums[j];
+                        Nums[j] = Nums[j + 1];
+                        Nums[j + 1] = tempVar;
+                    }
+                }
+            }
+            return Nums;
+        }
 
-        
+        public static double[] SortAscending(double[] Nums)
+        {
+            var n = Nums.Length;
+            for (int i = 0; i < n - 1; i++)
+            {
+                for (int j = 0; j < n - i - 1; j++)
+                {
+                    if (Nums[j] > Nums[j + 1])
+                    {
+                        var tempVar = Nums[j];
+                        Nums[j] = Nums[j + 1];
+                        Nums[j + 1] = tempVar;
+                    }
+                }
+            }
+            return Nums;
+        }
+
+        public static int[] SortDescending(int[] Nums)
+        {
+            int temp = 0;
+            int pass = 0;
+            int loop = 0;
+            for (pass = 0; pass <= Nums.Length - 2; pass++)
+            {
+                for (loop = 0; loop <= Nums.Length - 2; loop++)
+                {
+                    if (Nums[loop] < Nums[loop + 1])
+                    {
+                        temp = Nums[loop + 1];
+                        Nums[loop + 1] = Nums[loop];
+                        Nums[loop] = temp;
+                    }
+                }
+            }
+            return Nums;
+        }
+
+        public static double[] SortDescending(double[] Nums)
+        {
+            double temp = 0;
+            int pass = 0;
+            int loop = 0;
+            for (pass = 0; pass <= Nums.Length - 2; pass++)
+            {
+                for (loop = 0; loop <= Nums.Length - 2; loop++)
+                {
+                    if (Nums[loop] < Nums[loop + 1])
+                    {
+                        temp = Nums[loop + 1];
+                        Nums[loop + 1] = Nums[loop];
+                        Nums[loop] = temp;
+                    }
+                }
+            }
+            return Nums;
+        }
+
+
     }
 
 }
