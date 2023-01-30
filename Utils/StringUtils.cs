@@ -128,6 +128,78 @@ namespace MyUtilities
                 return false;
             }
         }
+
+        public static string Randomize(string s)
+        {
+            var q = from c in s.ToCharArray()
+                    orderby Guid.NewGuid()
+                    select c;
+            string y = string.Empty;
+            foreach (var r in q)
+                y += r;
+            return y;
+        }
+
+        public static char Mode(string s)
+        {
+            int[] charCount = new int[256];
+            int length = s.Length;
+            for (int i = 0; i < length; i++)
+            {
+                charCount[s[i]]++;
+            }
+            int maxCount = -1;
+            char character = ' ';
+            for (int i = 0; i < length; i++)
+            {
+                if (maxCount < charCount[s[i]])
+                {
+                    maxCount = charCount[s[i]];
+                    character = s[i];
+                }
+            }
+            return character;
+        }
+        public static int IndexOfLetter(string s)
+        {
+            int index = -1;
+            int[] arrayValues = new int[256];
+            for (int i = 0; i < s.Length; i++)
+            {
+                int value = s[i] - 'a';
+                arrayValues[value] += 1;
+            }
+            for (int i = 0; i < s.Length; i++)
+            {
+                int value = s[i] - 'a';
+                if (arrayValues[value] == 1)
+                {
+                    index = i;
+                    break;
+                }
+            }
+            return index;
+        }
+
+        public static char[] SortInAlphabeticalOrder(string s)
+        {
+            char temp;
+            string str = s.ToLower();
+            char[] charstr = str.ToCharArray();
+            for (int i = 1; i < charstr.Length; i++)
+            {
+                for (int j = 0; j < charstr.Length - 1; j++)
+                {
+                    if (charstr[j] > charstr[j + 1])
+                    {
+                        temp = charstr[j];
+                        charstr[j] = charstr[j + 1];
+                        charstr[j + 1] = temp;
+                    }
+                }
+            }
+            return charstr;
+        }
     }
 }
 
