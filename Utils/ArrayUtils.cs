@@ -225,26 +225,105 @@ namespace MyUtilities
             }
             return Nums;
         }
-        
+
         //Range
 
-        public static int Range(int[]Nums)
+        public static int Range(int[] Nums)
         {
-            int Min= Nums[0];
-            int Max=0;
+            int Min = Nums[0];
+            int Max = 0;
             int range = 0;
-            foreach(int num in Nums){
-                if(num<Min){
-                    Min=num;
+            foreach (int num in Nums)
+            {
+                if (num < Min)
+                {
+                    Min = num;
                 }
-                if(num > Max){
+                if (num > Max)
+                {
                     Max = num;
                 }
             }
             range = Max - Min;
             return range;
-        
+
+        }
+
+        public static int[] Randomize(int[] nums)
+        {
+            Random randomNum = new Random();
+
+            for (int i = nums.Length - 1; i > 0; --i)
+            {
+                int j = randomNum.Next(i + 1);
+                int temp = nums[i];
+                nums[i] = nums[j];
+                nums[j] = temp;
+            }
+            return nums;
+        }
+
+        public static double[] Randomize(double[] nums)
+        {
+            Random randomNum = new Random();
+
+            for (int i = nums.Length - 1; i > 0; --i)
+            {
+                int j = randomNum.Next(i + 1);
+                double temp = nums[i];
+                nums[i] = nums[j];
+                nums[j] = temp;
+            }
+            return nums;
+        }
+
+        public static int Mode(int[] nums)
+        {
+            Dictionary<int, int> counts = new Dictionary<int, int>();
+            foreach (int a in nums)
+            {
+                if (counts.ContainsKey(a))
+                    counts[a] = counts[a] + 1;
+                else
+                    counts[a] = 1;
+            }
+
+            int result = int.MinValue;
+            int max = int.MinValue;
+            foreach (int key in counts.Keys)
+            {
+                if (counts[key] > max)
+                {
+                    max = counts[key];
+                    result = key;
+                }
+            }
+            return result;
+        }
+
+        public static int Mode(double[] nums)
+        {
+            Dictionary<int, int> counts = new Dictionary<int, int>();
+            foreach (int a in nums)
+            {
+                if (counts.ContainsKey(a))
+                    counts[a] = counts[a] + 1;
+                else
+                    counts[a] = 1;
+            }
+
+            int result = int.MinValue;
+            int max = int.MinValue;
+            foreach (int key in counts.Keys)
+            {
+                if (counts[key] > max)
+                {
+                    max = counts[key];
+                    result = key;
+                }
+            }
+            return result;
         }
     }
-
 }
+
