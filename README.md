@@ -101,7 +101,10 @@ _This project was made to help save time by prodiving a list of functions alread
   -  StringUtils.CountConsonants("") returns "0"
   -  StringUtils.CountConsonants("Hello Everyone!") returns "7"
 - HasLetter
-  - example here
+  -  StringUtils.HasLetter("banana", "a") returns "True"
+  -  StringUtils.HasLetter("TEST", "a") returns "False"
+  -  StringUtils.HasLetter("", "a") returns "False"
+  -  StringUtils.HasLetter("Hello Everyone!", "a") returns "False"
 - Randomize
   -  StringUtils.Randomize("banana") returns "aanbna"
   -  StringUtils.Randomize("TEST") returns "ESTT"
@@ -113,7 +116,10 @@ _This project was made to help save time by prodiving a list of functions alread
   -  StringUtils.Mode("") returns ""
   -  StringUtils.Mode("Hello Everyone!") returns "e"
 - Index Of Letter
-  - example here
+  -  StringUtils.IndexofLetter("banana", "n") returns "2"
+  -  StringUtils.IndexofLetter("TEST", "E") returns "1"
+  -  StringUtils.IndexofLetter("") returns ""
+  -  StringUtils.IndexofLetter("Hello Everyone!", "y") returns "10"
 - Sort In Alphabetical Order
   -  StringUtils.Alphabetical("banana") returns "aaabnn"
   -  StringUtils.Alphabetical("TEST") returns ESTT""
@@ -136,9 +142,15 @@ _This project was made to help save time by prodiving a list of functions alread
   -  ArrayUtils.Min("1, 8, 78") returns "1"
   -  ArrayUtils.Min("28, 48, 98") returns "28"
 - SortAscending
-  - example here
+  -  ArrayUtils.SortAscending("1, 2, 3, 4, 5, 6, 7, 8, 9, 10") returns "1,2,3,4,5,6,7,8,9,10"
+  -  ArrayUtils.SortAscending("2, 4, 6, 8, 10, 12") returns "2,4,6,8,10,12"
+  -  ArrayUtils.SortAscending("1, 8, 78") returns "1,8,78"
+  -  ArrayUtils.SortAscending("28, 48, 98") returns "28,48,98"
 - SortDescending
-  - example here
+  -  ArrayUtils.SortDescending("1, 2, 3, 4, 5, 6, 7, 8, 9, 10") returns "10,9,8,7,6,5,4,3,2,1"
+  -  ArrayUtils.SortDescending("2, 4, 6, 8, 10, 12") returns "12,10,8,6,4,2"
+  -  ArrayUtils.SortDescending("1, 8, 78") returns "78,8,1"
+  -  ArrayUtils.SortDescending("28, 48, 98") returns "98,48,28"
 - Sum
   -  ArrayUtils.Sum("1, 2, 3, 4, 5, 6, 7, 8, 9, 10") returns "49"
   -  ArrayUtils.Sum("2, 4, 6, 8, 10, 12") returns "42"
@@ -150,7 +162,10 @@ _This project was made to help save time by prodiving a list of functions alread
   -  ArrayUtils.Product("1, 8, 78") returns "624"
   -  ArrayUtils.Product("28, 48, 98") returns "131,712"
 - Randomize
-  - example here
+  -  ArrayUtils.Randomize("1, 2, 3, 4, 5, 6, 7, 8, 9, 10") returns "2, 7, 4, 3, 9, 1, 10, 5, 6, 8"
+  -  ArrayUtils.Randomize("2, 4, 6, 8, 10, 12") returns "6, 12, 10, 2, 4"
+  -  ArrayUtils.Randomize("1, 8, 78") returns "78, 1, 8"
+  -  ArrayUtils.Randomize("28, 48, 98") returns "48, 28, 98"
 - Range
   -  ArrayUtils.Range("1, 2, 3, 4, 5, 6, 7, 8, 9, 10") returns "9"
   -  ArrayUtils.Range("2, 4, 6, 8, 10, 12") returns "10"
