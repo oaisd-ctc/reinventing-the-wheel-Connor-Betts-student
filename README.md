@@ -5,18 +5,70 @@
 _This project was made to help save time by prodiving a list of functions already made. Functions provided cover Strings, Arrays, and Math._
 ### Math Functions
 - Power
+  -  MathUtils.Power(2, 3) returns "8"
+  -  MathUtils.Power(2.0, 3.0) returns "8"
+  -  MathUtils.Power(2.0f. 3.0f) returns "8"
+  -  MathUtils.Power(2, 4) returns "16"
 - SquareRoot
+  -  MathUtils.SquareRoot(4) returns "2"
+  -  MathUtils.SquareRoot(4.0) returns "2"
+  -  MathUtils.SquareRoot(4.0f) returns "2"
+  -  MathUtils.SquareRoot(64) returns "8"
 - AbsoluteValue
+  -  MathUtils.AbsoluteValue(-7) returns "7"
+  -  MathUtils.AbsoluteValue(-7.0) returns "7"
+  -  MathUtils.AbsoluteValue(-7.0f returns "7"
+  -  MathUtils.AbsoluteValue(7) returns "7
 - Min
+  - MathUtils.Min(5, 2) returns "2"
+  - MathUtils.Min(5.0, 2.0) returns "2"
+  - MathUtils.Min(5.0f. 2.0f) returns "2"
+  - MathUtils.Min(4.25, 2.75) returns "2.75"
 - Max
+  - MathUtils.Max(5, 2) returns "5"
+  - MathUtils.Max(5.0, 2.0) returns "5"
+  - MathUtils.Max(5.0f. 2.0f) returns "5"
+  - MathUtils.Max(4.25, 2.75) returns "4.25"
 - Add
+  - MathUtils.Add(5, 2) returns "7"
+  - MathUtils.Add(5.0, 2.0) returns "7"
+  - MathUtils.Add(5.0f. 2.0f) returns "7"
+  - MathUtils.Add(4.25, 2.75) returns "7"
 - Subtract
+  -  MathUtils.Subtract(5, 2) returns "3"
+  -  MathUtils.Subtract(5.0, 2.0) returns "3"
+  -  MathUtils.Subtract(5.0f. 2.0f) returns "3"
+  -  MathUtils.Subtract(4.25, 2.75) returns "1.5"
 - Divide
+  -  MathUtils.Divide(4, 2) returns "2"
+  -  MathUtils.Divide(4.0, 2.0) returns "2"
+  -  MathUtils.Divide(4.0f. 2.0f) returns "2"
+  -  MathUtils.Divide(6, 3) returns "2"
 - Multiply
+  - MathUtils.Multiply5, 2) returns "10"
+  - MathUtils.Multiply(5.0, 2.0) returns "10"
+  - MathUtils.Multiply(5.0f. 2.0f) returns "10"
+  - MathUtils.Multiply(4.25, 2.75) returns "11.6875"
 - Difference
+  - MathUtils.Difference(5, 2) returns "3"
+  - MathUtils.Difference(5.0, 2.0) returns "3"
+  - MathUtils.Difference(5.0f. 2.0f) returns "3"
+  - MathUtils.Difference(4.25, 2.75) returns "1.5
 - Percent
+  - MathUtils.Percent(0.2) returns "20"
+  - MathUtils.Percent(.03f) returns "3"
+  - MathUtils.Percent(0.03m) returns "3"
+  - MathUtils.Percent(1) returns "100" 
 - Cubed
+  -  MathUtils.Cubed(2) returns "8"
+  -  MathUtils.Cubed(2.0) returns "8"
+  -  MathUtils.Cubed(2.0f) returns "8"
+  -  MathUtils.Cubed(3) returns "27"
 - Squared
+  -  MathUtils.Squared(5) returns "25"
+  -  MathUtils.Squared(5.0) returns "25"
+  -  MathUtils.Squared(5.0f) returns "25"
+  -  MathUtils.Squared(4) returns "16"
 ### String Funtions
 - ToUpper
 - ToLower
@@ -31,7 +83,15 @@ _This project was made to help save time by prodiving a list of functions alread
 - Sort In Alphabetical Order
 ### Array Functions
 - Average
+  -  ArrayUtils.Average("1, 2, 3, 4, 5, 6, 7, 8, 9, 10") returns "4.6"
+  -  ArrayUtils.Average("2, 4, 6, 8, 10, 12") returns "7"
+  -  ArrayUtils.Average("1, 8, 78") returns "35"
+  -  ArrayUtils.Average("28, 48, 98") returns "58"
 - Max
+  -  ArrayUtils.Max("1, 2, 3, 4, 5, 6, 7, 8, 9, 10") returns "10"
+  -  ArrayUtils.Max("2, 4, 6, 8, 10, 12") returns "12"
+  -  ArrayUtils.Max("1, 8, 78") returns "78"
+  -  ArrayUtils.Max("28, 48, 98") returns "98"
 - Min
 - SortAscending
 - SortDescending
