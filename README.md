@@ -101,7 +101,7 @@ _This project was made to help save time by prodiving a list of functions alread
   -  StringUtils.CountConsonants("") returns "0"
   -  StringUtils.CountConsonants("Hello Everyone!") returns "7"
 - HasLetter
-  - 
+  - example here
 - Randomize
   -  StringUtils.Randomize("banana") returns "aanbna"
   -  StringUtils.Randomize("TEST") returns "ESTT"
@@ -113,7 +113,7 @@ _This project was made to help save time by prodiving a list of functions alread
   -  StringUtils.Mode("") returns ""
   -  StringUtils.Mode("Hello Everyone!") returns "e"
 - Index Of Letter
-  - 
+  - example here
 - Sort In Alphabetical Order
   -  StringUtils.Alphabetical("banana") returns "aaabnn"
   -  StringUtils.Alphabetical("TEST") returns ESTT""
@@ -136,9 +136,9 @@ _This project was made to help save time by prodiving a list of functions alread
   -  ArrayUtils.Min("1, 8, 78") returns "1"
   -  ArrayUtils.Min("28, 48, 98") returns "28"
 - SortAscending
-  - 
+  - example here
 - SortDescending
-  - 
+  - example here
 - Sum
   -  ArrayUtils.Sum("1, 2, 3, 4, 5, 6, 7, 8, 9, 10") returns "49"
   -  ArrayUtils.Sum("2, 4, 6, 8, 10, 12") returns "42"
@@ -150,7 +150,7 @@ _This project was made to help save time by prodiving a list of functions alread
   -  ArrayUtils.Product("1, 8, 78") returns "624"
   -  ArrayUtils.Product("28, 48, 98") returns "131,712"
 - Randomize
-  - 
+  - example here
 - Range
   -  ArrayUtils.Range("1, 2, 3, 4, 5, 6, 7, 8, 9, 10") returns "9"
   -  ArrayUtils.Range("2, 4, 6, 8, 10, 12") returns "10"
