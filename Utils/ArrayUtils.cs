@@ -150,80 +150,97 @@ namespace MyUtilities
             return product;
         }
 
-        public static int[] SortAscending(int[] Nums)
+        public static void SortAscending(int[] Nums)
         {
-            var n = Nums.Length;
-            for (int i = 0; i < n - 1; i++)
+            int temp;
+            for (int j = 0; j <= Nums.Length - 2; j++)
             {
-                for (int j = 0; j < n - i - 1; j++)
+                for (int i = 0; i <= Nums.Length - 2; i++)
                 {
-                    if (Nums[j] > Nums[j + 1])
+                    if (Nums[i] > Nums[i + 1])
                     {
-                        var tempVar = Nums[j];
-                        Nums[j] = Nums[j + 1];
-                        Nums[j + 1] = tempVar;
+                        temp = Nums[i + 1];
+                        Nums[i + 1] = Nums[i];
+                        Nums[i] = temp;
                     }
                 }
             }
-            return Nums;
+            foreach (int n in Nums)
+            {
+                Console.Write(n + " ");
+            }
         }
 
-        public static double[] SortAscending(double[] Nums)
+        public static void SortAscending(double[] Nums)
         {
-            var n = Nums.Length;
-            for (int i = 0; i < n - 1; i++)
+            double temp;
+            double length = Nums.Length;
+            for (double j = 0; j <= length - 2; j++)
             {
-                for (int j = 0; j < n - i - 1; j++)
+                for (int i = 0; i <= length - 2; i++)
                 {
-                    if (Nums[j] > Nums[j + 1])
+                    if (Nums[i] > Nums[i + 1])
                     {
-                        var tempVar = Nums[j];
-                        Nums[j] = Nums[j + 1];
-                        Nums[j + 1] = tempVar;
+                        temp = Nums[i + 1];
+                        Nums[i + 1] = Nums[i];
+                        Nums[i] = temp;
                     }
                 }
             }
-            return Nums;
+            foreach (double n in Nums)
+            {
+                Console.Write(n + " ");
+            }
         }
 
-        public static int[] SortDescending(int[] Nums)
+        public static void SortDescending(int[] num)
         {
             int temp = 0;
+
             int pass = 0;
             int loop = 0;
-            for (pass = 0; pass <= Nums.Length - 2; pass++)
+
+            for (pass = 0; pass <= num.Length - 2; pass++)
             {
-                for (loop = 0; loop <= Nums.Length - 2; loop++)
+                for (loop = 0; loop <= num.Length - 2; loop++)
                 {
-                    if (Nums[loop] < Nums[loop + 1])
+                    if (num[loop] < num[loop + 1])
                     {
-                        temp = Nums[loop + 1];
-                        Nums[loop + 1] = Nums[loop];
-                        Nums[loop] = temp;
+                        temp = num[loop + 1];
+                        num[loop + 1] = num[loop];
+                        num[loop] = temp;
                     }
                 }
             }
-            return Nums;
+            foreach (int n in num)
+            {
+                Console.Write(n + " ");
+            }
         }
 
-        public static double[] SortDescending(double[] Nums)
+        public static void SortDescending(double[] num)
         {
             double temp = 0;
-            int pass = 0;
+
+            double pass = 0;
             int loop = 0;
-            for (pass = 0; pass <= Nums.Length - 2; pass++)
+
+            for (pass = 0; pass <= num.Length - 2; pass++)
             {
-                for (loop = 0; loop <= Nums.Length - 2; loop++)
+                for (loop = 0; loop <= num.Length - 2; loop++)
                 {
-                    if (Nums[loop] < Nums[loop + 1])
+                    if (num[loop] < num[loop + 1])
                     {
-                        temp = Nums[loop + 1];
-                        Nums[loop + 1] = Nums[loop];
-                        Nums[loop] = temp;
+                        temp = num[loop + 1];
+                        num[loop + 1] = num[loop];
+                        num[loop] = temp;
                     }
                 }
             }
-            return Nums;
+            foreach (double n in num)
+            {
+                Console.Write(n + " ");
+            }
         }
 
         //Range
@@ -249,33 +266,7 @@ namespace MyUtilities
 
         }
 
-        public static int[] Randomize(int[] nums)
-        {
-            Random randomNum = new Random();
-
-            for (int i = nums.Length - 1; i > 0; --i)
-            {
-                int j = randomNum.Next(i + 1);
-                int temp = nums[i];
-                nums[i] = nums[j];
-                nums[j] = temp;
-            }
-            return nums;
-        }
-
-        public static double[] Randomize(double[] nums)
-        {
-            Random randomNum = new Random();
-
-            for (int i = nums.Length - 1; i > 0; --i)
-            {
-                int j = randomNum.Next(i + 1);
-                double temp = nums[i];
-                nums[i] = nums[j];
-                nums[j] = temp;
-            }
-            return nums;
-        }
+        
 
         public static int Mode(int[] nums)
         {
@@ -323,6 +314,34 @@ namespace MyUtilities
                 }
             }
             return result;
+        }
+        
+          public static bool HasNumber(int[] nums, int p)
+        {
+            int l = nums.Length;
+            int c = p;
+            int f = 0;
+            for (int i = 0; i < l; i++)
+            {
+                if (nums[i] == p)
+                {
+                    for (int K = i + 1, j = 1; j < c; j++, K++)
+                    {
+                        if (nums[K] == p)
+                        {
+                            f++;
+                        }
+                    }
+                }
+            }
+            if (f == c - 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
