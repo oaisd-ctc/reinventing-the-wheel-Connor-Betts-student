@@ -3,113 +3,113 @@ namespace MyUtilities
 
     public static class MathUtils
     {
-        
+
         //Addition
         public static int Add(int x, int y)
         {
-            return x+y;
+            return x + y;
         }
 
         public static double Add(double x, double y)
         {
-            return x+y;
+            return x + y;
         }
 
         public static float Add(float x, float y)
         {
-            return x+y;
+            return x + y;
         }
 
         //Subtraction
 
         public static int Subtract(int x, int y)
         {
-            return x-y;
+            return x - y;
         }
 
         public static double Subtract(double x, double y)
         {
-            return x-y;
+            return x - y;
         }
         public static float Subtract(float x, float y)
         {
-            return x-y;
+            return x - y;
         }
 
         //Multiplication
 
         public static int Multiply(int x, int y)
         {
-            return x*y;
+            return x * y;
         }
         public static double Multiply(double x, double y)
         {
-            return x*y;
+            return x * y;
         }
         public static float Multiply(float x, float y)
         {
-            return x*y;
+            return x * y;
         }
 
         //Division
         public static int Divide(int x, int y)
-        { 
-            return x/y;
+        {
+            return x / y;
         }
         public static double Divide(double x, double y)
         {
-            return x/y;
+            return x / y;
         }
         public static float Divide(float x, float y)
         {
-            return x/y;
+            return x / y;
         }
 
         //Squared
         public static int Squared(int x)
         {
-            return x*x;
+            return x * x;
         }
         public static double Squared(double x)
         {
-            return x*x;
+            return x * x;
         }
         public static float Squared(float x)
         {
-            return x*x;
+            return x * x;
         }
 
         //Cubed
 
         public static int Cubed(int x)
         {
-            return x*x*x;
+            return x * x * x;
         }
         public static double Cubed(double x)
         {
-            return x*x*x;
+            return x * x * x;
         }
         public static float Cubed(float x)
         {
-            return x*x*x;
+            return x * x * x;
         }
 
         //Power
 
         public static int Power(int a, int n)
         {
-            int result =1;
+            int result = 1;
             for (int i = 0; i < n; i++)
             {
                 result *= a;
             }
-                return result;
+            return result;
 
         }
         public static double Power(double a, double n)
         {
-             double result = 1;
-            for(int i = 0; i<n; i++)
+            double result = 1;
+            for (int i = 0; i < n; i++)
             {
                 result *= a;
             }
@@ -118,7 +118,7 @@ namespace MyUtilities
         public static float Power(float a, float n)
         {
             float result = 1;
-            for (int i = 0; i<n; i++)
+            for (int i = 0; i < n; i++)
             {
                 result *= a;
             }
@@ -130,36 +130,51 @@ namespace MyUtilities
         public static int Min(int x, int y)
         {
             int result = 0;
-            if (x > y){
-                result =  y;
-            } else if (x < y){
-               result = x;
-            } else if (x==y){
-                result =x;
+            if (x > y)
+            {
+                result = y;
+            }
+            else if (x < y)
+            {
+                result = x;
+            }
+            else if (x == y)
+            {
+                result = x;
             }
             return result;
         }
         public static double Min(double x, double y)
         {
             double result = 0;
-            if (x > y){
-                result =  y;
-            } else if (x < y){
-               result = x;
-            } else if (x==y){
-                result =x;
+            if (x > y)
+            {
+                result = y;
+            }
+            else if (x < y)
+            {
+                result = x;
+            }
+            else if (x == y)
+            {
+                result = x;
             }
             return result;
         }
         public static float Min(float x, float y)
         {
             float result = 0;
-            if (x > y){
-                result =  y;
-            } else if (x < y){
-               result = x;
-            } else if (x==y){
-                result =x;
+            if (x > y)
+            {
+                result = y;
+            }
+            else if (x < y)
+            {
+                result = x;
+            }
+            else if (x == y)
+            {
+                result = x;
             }
             return result;
         }
@@ -169,36 +184,51 @@ namespace MyUtilities
         public static int Max(int x, int y)
         {
             int result = 0;
-            if (x < y){
-                result =  y;
-            } else if (x > y){
-               result = x;
-            } else if (x==y){
-                result =x;
+            if (x < y)
+            {
+                result = y;
+            }
+            else if (x > y)
+            {
+                result = x;
+            }
+            else if (x == y)
+            {
+                result = x;
             }
             return result;
         }
         public static double Max(double x, double y)
         {
-           double result = 0;
-            if (x < y){
-                result =  y;
-            } else if (x > y){
-               result = x;
-            } else if (x==y){
-                result =x;
+            double result = 0;
+            if (x < y)
+            {
+                result = y;
+            }
+            else if (x > y)
+            {
+                result = x;
+            }
+            else if (x == y)
+            {
+                result = x;
             }
             return result;
         }
         public static float Max(float x, float y)
         {
-             float result = 0;
-            if (x < y){
-                result =  y;
-            } else if (x > y){
-               result = x;
-            } else if (x==y){
-                result =x;
+            float result = 0;
+            if (x < y)
+            {
+                result = y;
+            }
+            else if (x > y)
+            {
+                result = x;
+            }
+            else if (x == y)
+            {
+                result = x;
             }
             return result;
         }
@@ -207,18 +237,25 @@ namespace MyUtilities
         public static int AbsoluteValue(int x)
         {
             int result = 0;
-            if (x>0){
-                result = x*-1;
-            } else if (x > 0){
+            if (x < 0)
+            {
+                result = x * -1;
+            }
+            else if (x > 0)
+            {
                 result = x;
             }
             return result;
         }
-        public static double AbsoluteValue(double x){
-             double result = 0;
-            if (x>0){
-                result = x*-1;
-            } else if (x > 0){
+        public static double AbsoluteValue(double x)
+        {
+            double result = 0;
+            if (x < 0)
+            {
+                result = x * -1;
+            }
+            else if (x > 0)
+            {
                 result = x;
             }
             return result;
@@ -226,9 +263,12 @@ namespace MyUtilities
         public static float AbsoluteValue(float x)
         {
             float result = 0;
-            if (x>0){
-                result = x*-1;
-            } else if (x > 0){
+            if (x < 0)
+            {
+                result = x * -1;
+            }
+            else if (x > 0)
+            {
                 result = x;
             }
             return result;
@@ -236,14 +276,17 @@ namespace MyUtilities
 
         //Difference
         public static int Difference(int x, int y)
-        {   
+        {
             int large = 0;
             int small = 0;
             int result = 0;
-            if (x > y){
+            if (x > y)
+            {
                 large = x;
                 small = y;
-            } else if (y > x){
+            }
+            else if (y > x)
+            {
                 large = y;
                 small = x;
             }
@@ -255,14 +298,17 @@ namespace MyUtilities
             double large = 0;
             double small = 0;
             double result = 0;
-            if(x>y){
-                large=x;
-                small=y;
-            } else if(y>x){
-                large=y;
-                small=x;
+            if (x > y)
+            {
+                large = x;
+                small = y;
             }
-            result = large-small;
+            else if (y > x)
+            {
+                large = y;
+                small = x;
+            }
+            result = large - small;
             return result;
         }
         public static float Difference(float x, float y)
@@ -270,14 +316,17 @@ namespace MyUtilities
             float large = 0;
             float small = 0;
             float result = 0;
-            if(x>y){
-                large=x;
-                small=y;
-            } else if(y>x){
-                large=y;
-                small=x;
+            if (x > y)
+            {
+                large = x;
+                small = y;
             }
-            result = large-small;
+            else if (y > x)
+            {
+                large = y;
+                small = x;
+            }
+            result = large - small;
             return result;
         }
 
@@ -286,11 +335,11 @@ namespace MyUtilities
         {
             int root = 1;
             int i = 0;
-            while(true)
+            while (true)
             {
-                i = i+1;
+                i = i + 1;
                 root = (x / root + root) / 2;
-                if (i== x +1) {break; }
+                if (i == x + 1) { break; }
             }
             return root;
         }
@@ -298,11 +347,11 @@ namespace MyUtilities
         {
             double root = 1;
             int i = 0;
-            while(true)
+            while (true)
             {
-                i = i+1;
+                i = i + 1;
                 root = (x / root + root) / 2;
-                if (i== x +1) {break; }
+                if (i == x + 1) { break; }
             }
             return root;
         }
@@ -310,11 +359,11 @@ namespace MyUtilities
         {
             float root = 1;
             int i = 0;
-            while(true)
+            while (true)
             {
-                i = i+1;
+                i = i + 1;
                 root = (x / root + root) / 2;
-                if (i== x +1) {break; }
+                if (i == x + 1) { break; }
             }
             return root;
         }
@@ -323,18 +372,18 @@ namespace MyUtilities
 
         public static double Percent(double x)
         {
-            return x*100;
+            return x * 100;
         }
         public static float Percent(float x)
         {
-            return x*100;
+            return x * 100;
         }
         public static decimal Percent(decimal x)
         {
-            return x*100;
+            return x * 100;
         }
 
-        
+
 
     }
 

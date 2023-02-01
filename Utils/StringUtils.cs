@@ -139,7 +139,7 @@ namespace MyUtilities
                 y += r;
             return y;
         }
-
+//^this one no work^
         public static char Mode(string s)
         {
             int[] charCount = new int[256];

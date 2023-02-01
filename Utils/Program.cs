@@ -12,7 +12,6 @@
 
             Console.WriteLine(MathUtils.SquareRoot(145));
             Console.WriteLine(ArrayUtils.Range(Nums));
-
         }
 
 
