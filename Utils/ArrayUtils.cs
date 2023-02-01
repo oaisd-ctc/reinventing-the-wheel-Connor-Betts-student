@@ -266,33 +266,7 @@ namespace MyUtilities
 
         }
 
-        public static int[] Randomize(int[] nums)
-        {
-            Random randomNum = new Random();
-
-            for (int i = nums.Length - 1; i > 0; --i)
-            {
-                int j = randomNum.Next(i + 1);
-                int temp = nums[i];
-                nums[i] = nums[j];
-                nums[j] = temp;
-            }
-            return nums;
-        }
-
-        public static double[] Randomize(double[] nums)
-        {
-            Random randomNum = new Random();
-
-            for (int i = nums.Length - 1; i > 0; --i)
-            {
-                int j = randomNum.Next(i + 1);
-                double temp = nums[i];
-                nums[i] = nums[j];
-                nums[j] = temp;
-            }
-            return nums;
-        }
+        
 
         public static int Mode(int[] nums)
         {
@@ -340,6 +314,34 @@ namespace MyUtilities
                 }
             }
             return result;
+        }
+        
+          public static bool HasNumber(int[] nums, int p)
+        {
+            int l = nums.Length;
+            int c = p;
+            int f = 0;
+            for (int i = 0; i < l; i++)
+            {
+                if (nums[i] == p)
+                {
+                    for (int K = i + 1, j = 1; j < c; j++, K++)
+                    {
+                        if (nums[K] == p)
+                        {
+                            f++;
+                        }
+                    }
+                }
+            }
+            if (f == c - 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
