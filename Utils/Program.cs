@@ -13,8 +13,6 @@
 
            //Console.WriteLine(MathUtils.SquareRoot(145));
             ArrayUtils.SortAscending(Nums);
-
-
         }
 
 
