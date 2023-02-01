@@ -12,6 +12,7 @@
 
             Console.WriteLine(MathUtils.SquareRoot(145));
             Console.WriteLine(ArrayUtils.Range(Nums));
+            Console.WriteLine(ArrayUtils.HasNumber(Nums, 2));
 
         }
 
