@@ -319,22 +319,15 @@ namespace MyUtilities
         public static bool HasNumber(int[] nums, int p)
         {
             int l = nums.Length;
-            int c = p;
             int f = 0;
             for (int i = 0; i < l; i++)
             {
                 if (nums[i] == p)
                 {
-                    for (int K = i + 1, j = 1; j < c; j++, K++)
-                    {
-                        if (nums[K] == p)
-                        {
-                            f++;
-                        }
-                    }
+                    f++;
                 }
             }
-            if (f == c - 1)
+            if (f == 1)
             {
                 return true;
             }
@@ -344,25 +337,18 @@ namespace MyUtilities
             }
         }
 
-        public static bool HasNumber(double[] nums, double p)
+         public static bool HasNumber(double[] nums, double p)
         {
             int l = nums.Length;
-            double c = p;
-            int f = 0;
+            double f = 0;
             for (int i = 0; i < l; i++)
             {
                 if (nums[i] == p)
                 {
-                    for (int K = i + 1, j = 1; j < c; j++, K++)
-                    {
-                        if (nums[K] == p)
-                        {
-                            f++;
-                        }
-                    }
+                    f++;
                 }
             }
-            if (f == c - 1)
+            if (f == 1)
             {
                 return true;
             }

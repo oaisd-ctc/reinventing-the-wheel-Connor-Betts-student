@@ -13,6 +13,10 @@
 
            //Console.WriteLine(MathUtils.SquareRoot(145));
             ArrayUtils.SortAscending(Nums);
+            Console.WriteLine(ArrayUtils.HasNumber(Nums, 124));
+            
+
+
         }
 
 
