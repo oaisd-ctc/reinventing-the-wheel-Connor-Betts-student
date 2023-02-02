@@ -2,6 +2,14 @@ namespace MyUtilities
 {
     public static class StringUtils
     {
+
+        /// <summary>
+        /// Turns letters to uppercase
+        /// </summary>
+        /// <param name="s">The string.</param>
+        /// <returns>
+        /// Uppercase verion of string 
+        /// </returns>
         public static string ToUpper(string s)
         {
             String output = "";
