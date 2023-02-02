@@ -4,7 +4,14 @@ namespace MyUtilities
     public static class MathUtils
     {
 
-        //Addition
+        /// <summary>
+        /// Adds the two inputs together
+        /// </summary>
+        ///<pram name="x">The first number.</param>
+        ///<pram name="y">The second number.</param>
+        ///<returns>
+        ///The sum of x+y
+        /// </returns>
         public static int Add(int x, int y)
         {
             return x + y;
