@@ -105,11 +105,11 @@ _This project was made to help save time by prodiving a list of functions alread
   -  StringUtils.HasLetter("TEST", "a") returns "False"
   -  StringUtils.HasLetter("", "a") returns "False"
   -  StringUtils.HasLetter("Hello Everyone!", "a") returns "False"
-- Randomize
-  -  StringUtils.Randomize("banana") returns "aanbna"
-  -  StringUtils.Randomize("TEST") returns "ESTT"
+- PrintVowels
+  -  StringUtils.Randomize("banana") returns "aaa"
+  -  StringUtils.Randomize("TEST") returns "E"
   -  StringUtils.Randomize("") returns ""
-  -  StringUtils.Randomize("Hello Everyone!") returns "yvEoeollr eHn"
+  -  StringUtils.Randomize("Hello Everyone!") returns "eoEeo"
 - Mode
   -  StringUtils.Mode("banana") returns "a"
   -  StringUtils.Mode("TEST") returns "T"
@@ -161,11 +161,12 @@ _This project was made to help save time by prodiving a list of functions alread
   -  ArrayUtils.Product("2, 4, 6, 8, 10, 12") returns "46,080"
   -  ArrayUtils.Product("1, 8, 78") returns "624"
   -  ArrayUtils.Product("28, 48, 98") returns "131,712"
-- Randomize
-  -  ArrayUtils.Randomize("1, 2, 3, 4, 5, 6, 7, 8, 9, 10") returns "2, 7, 4, 3, 9, 1, 10, 5, 6, 8"
-  -  ArrayUtils.Randomize("2, 4, 6, 8, 10, 12") returns "6, 12, 10, 2, 4"
-  -  ArrayUtils.Randomize("1, 8, 78") returns "78, 1, 8"
-  -  ArrayUtils.Randomize("28, 48, 98") returns "48, 28, 98"
+- HasNumber
+     int[] Nums = {1, 2, 3, 4, 5, 6, 7};
+  -  ArrayUtils.Randomize(Nums, 2) returns "true"
+  -  ArrayUtils.Randomize(Nums, 21) returns "false"
+  -  ArrayUtils.Randomize(Nums, 32) returns "true"
+  -  ArrayUtils.Randomize(Nums, 5) returns "true"
 - Range
   -  ArrayUtils.Range("1, 2, 3, 4, 5, 6, 7, 8, 9, 10") returns "9"
   -  ArrayUtils.Range("2, 4, 6, 8, 10, 12") returns "10"
