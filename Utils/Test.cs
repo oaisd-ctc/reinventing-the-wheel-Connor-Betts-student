@@ -122,11 +122,11 @@ public class Tests
     {
         Assert.Equal("eety", StringUtils.SortInAlphabeticalOrder("yeet"));
     }
-    //[Fact]
-    //public void printonlyvowelstest()
-    //{
+    [Fact]
+    public void printonlyvowelstest()
+    {
 
-   // }
+    }
     //Arrays
     [Fact]
     public void averagetest()
