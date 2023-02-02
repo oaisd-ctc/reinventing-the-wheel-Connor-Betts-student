@@ -14,6 +14,8 @@
            //Console.WriteLine(MathUtils.SquareRoot(145));
             ArrayUtils.SortAscending(Nums);
             Console.WriteLine(ArrayUtils.HasNumber(Nums, 124));
+            Console.WriteLine(MathUtils.Subtract(1, 2));
+            MathUtils.Add(2.0, 1.0);
             
 
 
