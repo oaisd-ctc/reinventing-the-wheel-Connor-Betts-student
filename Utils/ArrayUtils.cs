@@ -4,6 +4,15 @@ namespace MyUtilities
     public static class ArrayUtils
     {
         //Average & Mean
+
+        /// <summary>
+        /// Finds the average of an array of numbers
+        /// </summary>
+        /// <param name="Nums">The Array.</param>
+        /// <returns>
+        /// Average of the array
+        /// </returns>
+
         public static int Average(int[] Nums)
         {
             int average = 0;
@@ -18,6 +27,14 @@ namespace MyUtilities
             average = sum / length;
             return average;
         }
+
+        /// <summary>
+        /// Finds the average of an array of numbers
+        /// </summary>
+        /// <param name="Nums">The Array.</param>
+        /// <returns>
+        /// Average of the array
+        /// </returns>
         public static double Average(double[] Nums)
         {
             double average = 0;
@@ -32,6 +49,14 @@ namespace MyUtilities
             average = sum / length;
             return average;
         }
+
+        /// <summary>
+        /// Finds the mean of an array of numbers
+        /// </summary>
+        /// <param name="Nums">The Array.</param>
+        /// <returns>
+        /// Mean of the array
+        /// </returns>
         public static int Mean(int[] Nums)
         {
             int mean = 0;
@@ -46,6 +71,14 @@ namespace MyUtilities
             mean = sum / length;
             return mean;
         }
+
+        /// <summary>
+        /// Finds the mean of an array of numbers
+        /// </summary>
+        /// <param name="Nums">The Array.</param>
+        /// <returns>
+        /// Mean of the array
+        /// </returns>
         public static double Mean(double[] Nums)
         {
             double mean = 0;
@@ -61,6 +94,14 @@ namespace MyUtilities
             return mean;
         }
         // Max & Min
+
+        /// <summary>
+        /// Finds the max of an array of numbers
+        /// </summary>
+        /// <param name="Nums">The Array.</param>
+        /// <returns>
+        /// Max of the array
+        /// </returns>
         public static int Max(int[] Nums)
         {
             int Max = 1;
@@ -73,6 +114,14 @@ namespace MyUtilities
             }
             return Max;
         }
+
+        /// <summary>
+        /// Finds the max of an array of numbers
+        /// </summary>
+        /// <param name="Nums">The Array.</param>
+        /// <returns>
+        /// Max of the array
+        /// </returns>
         public static double Max(double[] Nums)
         {
             double Max = 1;
@@ -85,6 +134,14 @@ namespace MyUtilities
             }
             return Max;
         }
+
+        /// <summary>
+        /// Finds the min of an array of numbers
+        /// </summary>
+        /// <param name="Nums">The Array.</param>
+        /// <returns>
+        /// Min of the array
+        /// </returns>
         public static int Min(int[] Nums)
         {
             int Min = Nums[0];
@@ -97,6 +154,14 @@ namespace MyUtilities
             }
             return Min;
         }
+
+        /// <summary>
+        /// Finds the min of an array of numbers
+        /// </summary>
+        /// <param name="Nums">The Array.</param>
+        /// <returns>
+        /// Min of the array
+        /// </returns>
         public static double Min(double[] Nums)
         {
             double Min = Nums[0];
@@ -113,6 +178,14 @@ namespace MyUtilities
 
 
         //Sum & Product
+
+        /// <summary>
+        /// Finds the total sum of an array of numbers
+        /// </summary>
+        /// <param name="Nums">The Array.</param>
+        /// <returns>
+        /// Total sum of the array
+        /// </returns>
         public static int Sum(int[] Nums)
         {
             int sum = 0;
@@ -122,6 +195,14 @@ namespace MyUtilities
             }
             return sum;
         }
+
+        /// <summary>
+        /// Finds the total sum of an array of numbers
+        /// </summary>
+        /// <param name="Nums">The Array.</param>
+        /// <returns>
+        /// Total sum of the array
+        /// </returns>
         public static double Sum(double[] Nums)
         {
             double sum = 0;
@@ -131,6 +212,14 @@ namespace MyUtilities
             }
             return sum;
         }
+
+        /// <summary>
+        /// Finds the total product of an array of numbers
+        /// </summary>
+        /// <param name="Nums">The Array.</param>
+        /// <returns>
+        /// Total product of the array
+        /// </returns>
         public static int Product(int[] Nums)
         {
             int product = 1;
@@ -140,6 +229,14 @@ namespace MyUtilities
             }
             return product;
         }
+
+        /// <summary>
+        /// Finds the total product of an array of numbers
+        /// </summary>
+        /// <param name="Nums">The Array.</param>
+        /// <returns>
+        /// Total product of the array
+        /// </returns>
         public static double Product(double[] Nums)
         {
             double product = 1;
@@ -149,6 +246,14 @@ namespace MyUtilities
             }
             return product;
         }
+
+        /// <summary>
+        /// Sorts the numbers in an array from least to greatest
+        /// </summary>
+        /// <param name="Nums">The Array.</param>
+        /// <returns>
+        /// The numbers in ascending order
+        /// </returns>
 
         public static int[] SortAscending(int[] Nums)
         {
@@ -167,6 +272,14 @@ namespace MyUtilities
             }
             return Nums;
         }
+
+        /// <summary>
+        /// Sorts the numbers in an array from least to greatest
+        /// </summary>
+        /// <param name="Nums">The Array.</param>
+        /// <returns>
+        /// The numbers in ascending order
+        /// </returns>
 
         public static void SortAscending(double[] Nums)
         {
@@ -190,6 +303,14 @@ namespace MyUtilities
             }
         }
 
+        /// <summary>
+        /// Sorts the numbers in an array from greatest to least
+        /// </summary>
+        /// <param name="Nums">The Array.</param>
+        /// <returns>
+        /// The numbers in decending order
+        /// </returns>
+
         public static int[] SortDescending(int[] num)
         {
             int temp = 0;
@@ -211,6 +332,15 @@ namespace MyUtilities
             }
           return num;
         }
+
+        /// <summary>
+        /// Sorts the numbers in an array from greatest to least
+        /// </summary>
+        /// <param name="Nums">The Array.</param>
+        /// <returns>
+        /// The numbers in decending order
+        /// </returns>
+
 
         public static void SortDescending(double[] num)
         {
@@ -239,6 +369,16 @@ namespace MyUtilities
 
         //Range
 
+        /// <summary>
+        /// Finds the range of an array
+        /// </summary>
+        /// <param name="Nums">The Array.</param>
+        /// <returns>
+        /// The range of the array
+        /// </returns>
+
+
+
         public static int Range(int[] Nums)
         {
             int Min = Nums[0];
@@ -259,6 +399,14 @@ namespace MyUtilities
             return range;
 
         }
+
+        /// <summary>
+        /// Finds the mode of an array
+        /// </summary>
+        /// <param name="Nums">The Array.</param>
+        /// <returns>
+        /// The mode of the array
+        /// </returns>
 
         
 
@@ -286,6 +434,14 @@ namespace MyUtilities
             return result;
         }
 
+        /// <summary>
+        /// Finds the mode of an array
+        /// </summary>
+        /// <param name="Nums">The Array.</param>
+        /// <returns>
+        /// The mode of the array
+        /// </returns>
+
         public static int Mode(double[] nums)
         {
             Dictionary<int, int> counts = new Dictionary<int, int>();
@@ -309,6 +465,15 @@ namespace MyUtilities
             }
             return result;
         }
+
+        /// <summary>
+        /// Checks an array for a certain number
+        /// </summary>
+        /// <param name="Nums">The Array.</param>
+        /// <param name="p">The integer.</param>
+        /// <returns>
+        /// Returns true if the number was found, returns false if the number was not found
+        /// </returns>
         
         public static bool HasNumber(int[] nums, int p)
         {
@@ -330,6 +495,16 @@ namespace MyUtilities
                 return false;
             }
         }
+
+        /// <summary>
+        /// Checks an array for a certain number
+        /// </summary>
+        /// <param name="Nums">The Array.</param>
+        /// <param name="p">The integer.</param>
+        /// <returns>
+        /// Returns true if the number was found, returns false if the number was not found
+        /// </returns>
+        
 
          public static bool HasNumber(double[] nums, double p)
         {
