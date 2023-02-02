@@ -330,7 +330,7 @@ namespace MyUtilities
                     }
                 }
             }
-          return num;
+            return num;
         }
 
         /// <summary>
@@ -408,7 +408,7 @@ namespace MyUtilities
         /// The mode of the array
         /// </returns>
 
-        
+
 
         public static int Mode(int[] nums)
         {
@@ -474,7 +474,7 @@ namespace MyUtilities
         /// <returns>
         /// Returns true if the number was found, returns false if the number was not found
         /// </returns>
-        
+
         public static bool HasNumber(int[] nums, int p)
         {
             int l = nums.Length;
@@ -504,9 +504,9 @@ namespace MyUtilities
         /// <returns>
         /// Returns true if the number was found, returns false if the number was not found
         /// </returns>
-        
 
-         public static bool HasNumber(double[] nums, double p)
+
+        public static bool HasNumber(double[] nums, double p)
         {
             int l = nums.Length;
             double f = 0;

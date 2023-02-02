@@ -275,10 +275,10 @@ namespace MyUtilities
 
         public static void Vowel(string str)
         {
-            int[] Vowels = {65, 97, 69, 101, 73, 105, 79, 111, 85, 117};
-            foreach(char s in str)
+            int[] Vowels = { 65, 97, 69, 101, 73, 105, 79, 111, 85, 117 };
+            foreach (char s in str)
             {
-                if(ArrayUtils.HasNumber(Vowels, (int)s))
+                if (ArrayUtils.HasNumber(Vowels, (int)s))
                 {
                     Console.Write(s + " ");
                 }
