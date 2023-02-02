@@ -455,6 +455,14 @@ namespace MyUtilities
         }
 
         //Absolute value
+
+        /// <summary>
+        /// distance from 0
+        /// </summary>
+        /// <param name="x">The first number.</param>
+        /// <returns>
+        /// Absolute value of x
+        /// </returns>
         public static int AbsoluteValue(int x)
         {
             int result = 0;
@@ -468,6 +476,14 @@ namespace MyUtilities
             }
             return result;
         }
+
+        /// <summary>
+        /// distance from 0
+        /// </summary>
+        /// <param name="x">The first number.</param>
+        /// <returns>
+        /// Absolute value of x
+        /// </returns>
         public static double AbsoluteValue(double x)
         {
             double result = 0;
@@ -481,6 +497,14 @@ namespace MyUtilities
             }
             return result;
         }
+
+        /// <summary>
+        /// distance from 0
+        /// </summary>
+        /// <param name="x">The first number.</param>
+        /// <returns>
+        /// Absolute value of x
+        /// </returns>
         public static float AbsoluteValue(float x)
         {
             float result = 0;
@@ -496,6 +520,15 @@ namespace MyUtilities
         }
 
         //Difference
+
+        /// <summary>
+        /// Difference between two inputs
+        /// </summary>
+        /// <param name="x">The first number.</param>
+        /// <param name="y">The second number.</param>
+        /// <returns>
+        /// largest number - smallest number
+        /// </returns>
         public static int Difference(int x, int y)
         {
             int large = 0;
@@ -514,6 +547,15 @@ namespace MyUtilities
             result = large - small;
             return result;
         }
+
+        /// <summary>
+        /// Difference between two inputs
+        /// </summary>
+        /// <param name="x">The first number.</param>
+        /// <param name="y">The second number.</param>
+        /// <returns>
+        /// largest number - smallest number
+        /// </returns>
         public static double Difference(double x, double y)
         {
             double large = 0;
@@ -532,6 +574,15 @@ namespace MyUtilities
             result = large - small;
             return result;
         }
+
+        /// <summary>
+        /// Difference between two inputs
+        /// </summary>
+        /// <param name="x">The first number.</param>
+        /// <param name="y">The second number.</param>
+        /// <returns>
+        /// largest number - smallest number
+        /// </returns>
         public static float Difference(float x, float y)
         {
             float large = 0;
@@ -552,6 +603,14 @@ namespace MyUtilities
         }
 
         //Square Root
+
+        /// <summary>
+        /// Finds the square root of x
+        /// </summary>
+        /// <param name="x">The first number.</param>
+        /// <returns>
+        /// square root of x
+        /// </returns>
         public static int SquareRoot(int x)
         {
             int root = 1;
@@ -564,6 +623,14 @@ namespace MyUtilities
             }
             return root;
         }
+
+        /// <summary>
+        /// Finds the square root of x
+        /// </summary>
+        /// <param name="x">The first number.</param>
+        /// <returns>
+        /// square root of x
+        /// </returns>
         public static double SquareRoot(double x)
         {
             double root = 1;
@@ -576,6 +643,14 @@ namespace MyUtilities
             }
             return root;
         }
+
+        /// <summary>
+        /// Finds the square root of x
+        /// </summary>
+        /// <param name="x">The first number.</param>
+        /// <returns>
+        /// square root of x
+        /// </returns>
         public static float SquareRoot(float x)
         {
             float root = 1;
@@ -590,6 +665,14 @@ namespace MyUtilities
         }
 
         //Percent
+
+        /// <summary>
+        /// Turns a number into a percent
+        /// </summary>
+        /// <param name="x">The first number.</param>
+        /// <returns>
+        /// x as a percent
+        /// </returns>
 
         public static double Percent(double x)
         {
