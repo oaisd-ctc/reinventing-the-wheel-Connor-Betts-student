@@ -57,7 +57,7 @@ namespace MyUtilities
             return reversestring;
         }
 
-        public static string CountVowels(string s)
+        public static int CountVowels(string s)
         {
             int vowel = 0;
             int cons = 0;
@@ -76,10 +76,10 @@ namespace MyUtilities
                 }
             }
 
-            return "Vowels - " + vowel + ".";
+            return vowel;
         }
 
-        public static string CountConstants(string s)
+        public static int CountConstants(string s)
         {
             int vowel = 0;
             int cons = 0;
@@ -98,7 +98,7 @@ namespace MyUtilities
                 }
             }
 
-            return "Constants - " + cons + ".";
+            return cons;
         }
 
         public static bool HasLetter(string s, string p)
@@ -129,17 +129,6 @@ namespace MyUtilities
             }
         }
 
-        public static string Randomize(string s)
-        {
-            var q = from c in s.ToCharArray()
-                    orderby Guid.NewGuid()
-                    select c;
-            string y = string.Empty;
-            foreach (var r in q)
-                y += r;
-            return y;
-        }
-        //^this one no work^
         public static char Mode(string s)
         {
             int[] charCount = new int[256];
@@ -199,18 +188,6 @@ namespace MyUtilities
                 }
             }
             return charstr;
-        }
-
-        public static void Vowel(string str)
-        {
-            int[] Vowels = {65, 69, 73, 79, 85, 97, 101, 105, 111, 117};
-            foreach (char s in str)
-            {
-                if(ArrayUtils.HasNumber(Vowels, (int)s))
-                {
-                    Console.Write(s + " ");
-                }
-            }
         }
     }
 }
