@@ -25,6 +25,14 @@ namespace MyUtilities
             return output;
         }
 
+        /// <summary>
+        /// Turns letters to lowercase
+        /// </summary>
+        /// <param name="s">The string.</param>
+        /// <param name="y">The second number.</param>
+        /// <returns>
+        /// lowercase version of string
+        /// </returns>
         public static string ToLower(string s)
         {
             String output = "";
@@ -40,6 +48,14 @@ namespace MyUtilities
             return output;
         }
 
+        /// <summary>
+        /// Turns letters to lowercase
+        /// </summary>
+        /// <param name="s">The string.</param>
+        /// <param name="y">The second number.</param>
+        /// <returns>
+        /// lowercase version of string
+        /// </returns>
         public static int Length(string s)
         {
             int i = 0;
@@ -196,6 +212,18 @@ namespace MyUtilities
                 }
             }
             return charstr;
+        }
+
+        public static void Vowel(string str)
+        {
+            int[] Vowels = {65, 97, 69, 101, 73, 105, 79, 111, 85, 117};
+            foreach(char s in str)
+            {
+                if(ArrayUtils.HasNumber(Vowels, (int)s))
+                {
+                    Console.Write(s + " ");
+                }
+            }
         }
     }
 }
