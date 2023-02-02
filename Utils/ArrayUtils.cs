@@ -150,7 +150,7 @@ namespace MyUtilities
             return product;
         }
 
-        public static void SortAscending(int[] Nums)
+        public static int[] SortAscending(int[] Nums)
         {
             int temp;
             for (int j = 0; j <= Nums.Length - 2; j++)
@@ -165,10 +165,7 @@ namespace MyUtilities
                     }
                 }
             }
-            foreach (int n in Nums)
-            {
-                Console.Write(n + " ");
-            }
+            return Nums;
         }
 
         public static void SortAscending(double[] Nums)
@@ -193,7 +190,7 @@ namespace MyUtilities
             }
         }
 
-        public static void SortDescending(int[] num)
+        public static int[] SortDescending(int[] num)
         {
             int temp = 0;
 
@@ -212,10 +209,7 @@ namespace MyUtilities
                     }
                 }
             }
-            foreach (int n in num)
-            {
-                Console.Write(n + " ");
-            }
+          return num;
         }
 
         public static void SortDescending(double[] num)
