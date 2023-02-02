@@ -11,9 +11,10 @@
             int[] Nums = {6, 2, 3, 4, 524, 90, 7};
 
 
-           //Console.WriteLine(MathUtils.SquareRoot(145));
-            ArrayUtils.SortAscending(Nums);
-            Console.WriteLine(ArrayUtils.HasNumber(Nums, 124));
+        //Console.WriteLine(MathUtils.SquareRoot(145));
+            //ArrayUtils.SortAscending(Nums);
+            //Console.WriteLine(ArrayUtils.HasNumber(Nums, 124));
+            StringUtils.Vowel("Corey");
             
 
 

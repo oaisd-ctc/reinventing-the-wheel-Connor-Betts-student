@@ -139,7 +139,7 @@ namespace MyUtilities
                 y += r;
             return y;
         }
-//^this one no work^
+        //^this one no work^
         public static char Mode(string s)
         {
             int[] charCount = new int[256];
@@ -199,6 +199,18 @@ namespace MyUtilities
                 }
             }
             return charstr;
+        }
+
+        public static void Vowel(string str)
+        {
+            int[] Vowels = {65, 69, 73, 79, 85, 97, 101, 105, 111, 117};
+            foreach (char s in str)
+            {
+                if(ArrayUtils.HasNumber(Vowels, (int)s))
+                {
+                    Console.Write(s + " ");
+                }
+            }
         }
     }
 }
