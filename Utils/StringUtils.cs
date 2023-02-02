@@ -29,7 +29,6 @@ namespace MyUtilities
         /// Turns letters to lowercase
         /// </summary>
         /// <param name="s">The string.</param>
-        /// <param name="y">The second number.</param>
         /// <returns>
         /// lowercase version of string
         /// </returns>
@@ -49,12 +48,11 @@ namespace MyUtilities
         }
 
         /// <summary>
-        /// Turns letters to lowercase
+        /// Counts the amount of characters in a string
         /// </summary>
         /// <param name="s">The string.</param>
-        /// <param name="y">The second number.</param>
         /// <returns>
-        /// lowercase version of string
+        /// The number of characters in the string
         /// </returns>
         public static int Length(string s)
         {
@@ -66,6 +64,13 @@ namespace MyUtilities
             return i;
         }
 
+        /// <summary>
+        /// Reverses the given string
+        /// </summary>
+        /// <param name="s">The string.</param>
+        /// <returns>
+        /// The reversed version of a string....Example....Input(hello)-Output(olleh)
+        /// </returns>
         public static string Reverse(string s)
         {
             string reversestring = "";
@@ -80,6 +85,14 @@ namespace MyUtilities
             }
             return reversestring;
         }
+
+        /// <summary>
+        /// Counts the amount of Vowels in a string
+        /// </summary>
+        /// <param name="s">The string.</param>
+        /// <returns>
+        /// The number of vowels in the string
+        /// </returns>
 
         public static int CountVowels(string s)
         {
@@ -103,6 +116,13 @@ namespace MyUtilities
             return vowel;
         }
 
+        /// <summary>
+        /// Counts the amount of constants in a string
+        /// </summary>
+        /// <param name="s">The string.</param>
+        /// <returns>
+        /// The number of constants in the string
+        /// </returns>
         public static int CountConstants(string s)
         {
             int vowel = 0;
@@ -125,6 +145,14 @@ namespace MyUtilities
             return cons;
         }
 
+        /// <summary>
+        /// Checks to see if a string contains a certain letter or word
+        /// </summary>
+        /// <param name="s">The first string.</param>
+        /// <param name="p">The second string.</param>
+        /// <returns>
+        /// True if it does contain the string, False if it does not contain the string
+        /// </returns>
         public static bool HasLetter(string s, string p)
         {
             int l = s.Length;
@@ -153,6 +181,13 @@ namespace MyUtilities
             }
         }
 
+        /// <summary>
+        /// Finds the letter in a string that repeats the most
+        /// </summary>
+        /// <param name="s">The string.</param>
+        /// <returns>
+        /// The letter that is repeated the most
+        /// </returns>
         public static char Mode(string s)
         {
             int[] charCount = new int[256];
@@ -173,6 +208,14 @@ namespace MyUtilities
             }
             return character;
         }
+
+        /// <summary>
+        /// Finds where a letter is located in a string
+        /// </summary>
+        /// <param name="s">The string.</param>
+        /// <returns>
+        /// The position of the letter in the string
+        /// </returns>
         public static int IndexOfLetter(string s)
         {
             int index = -1;
@@ -194,6 +237,14 @@ namespace MyUtilities
             return index;
         }
 
+        /// <summary>
+        /// Sorts the letters of a string in alphabetical order
+        /// </summary>
+        /// <param name="s">The string.</param>
+        /// <returns>
+        /// The string in alphabetical order
+        /// </returns>
+
         public static char[] SortInAlphabeticalOrder(string s)
         {
             char temp;
@@ -213,6 +264,14 @@ namespace MyUtilities
             }
             return charstr;
         }
+
+        /// <summary>
+        /// Finds the vowels in a string
+        /// </summary>
+        /// <param name="s">The string.</param>
+        /// <returns>
+        /// The vowels found in the string
+        /// </returns>
 
         public static void Vowel(string str)
         {

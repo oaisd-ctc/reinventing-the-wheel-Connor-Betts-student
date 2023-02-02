@@ -678,10 +678,27 @@ namespace MyUtilities
         {
             return x * 100;
         }
+
+        /// <summary>
+        /// Turns a number into a percent
+        /// </summary>
+        /// <param name="x">The number.</param>
+        /// <returns>
+        /// x as a percent
+        /// </returns>
         public static float Percent(float x)
         {
             return x * 100;
         }
+
+        /// <summary>
+        /// Turns a number into a percent
+        /// </summary>
+        /// <param name="x">The number.</param>
+        /// <returns>
+        /// x as a percent
+        /// </returns>
+
         public static decimal Percent(decimal x)
         {
             return x * 100;
